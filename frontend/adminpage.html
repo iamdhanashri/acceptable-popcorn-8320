@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin DashBoard</title>
+    <link rel="stylesheet" href="./Styles/adminpage.css">
+</head>
+
+<body>
+    <!-- <h2 id="admin">Admin Dashboard Page</h2> -->
+    <div id="navbar">
+        <!-- <div id="logo">
+            <img height="55px" src="./media/Baby's (2).png" alt="">
+        </div> -->
+        <div id="user-logo">
+            <!-- <img id="qs-image" src="https://png.pngtree.com/png-vector/20190411/ourmid/pngtree-vector-bell-icon-png-image_927119.jpg" alt=""> -->
+            <button id="user-btn">A</button>
+            <button id="logout">Logout</button>
+        </div>
+
+    </div>
+
+    <div id="main-container">
+        <div id="all-buttons">
+            <button id="show-all-products"> Show All Products</button>
+            <hr>
+            <button id="addProduct">Add Products</button>
+            <hr>
+            <button id="users">Users</button>
+            <hr>
+            <button id="orders">Orders</button>
+            <hr>
+            <!-- <button>Gift cards</button> -->
+        </div>
+
+        <div id="show">
+
+            <div id="all-products">
+                <div id="sort-and-search">
+                    <select name="sort" id="sorting-data">
+                        <option value="">SORT By | Featured </option>
+                        <option value="lth">Price Low to High</option>
+                        <option value="htl">Price High to Low</option>
+                        <option value="rating">Top Rated</option>
+                    </select>
+                </div>
+                <div id="show-all-product">
+                    <!-- <div>
+                        <img src="https://is3-ssl.mzstatic.com/image/thumb/vt7su-xCPQYO5Z-IftduYw/1478x832.webp" alt="">
+                         <h2>title</h2>
+                           <p>Release Year:2019</p>
+                           <p>Rating:8.2</p>
+                    </div> -->
+
+                </div>
+            </div>
+            <div id="add-products">
+                <form id="input-form">
+                    <input type="text" id="name" placeholder="Enter Product Name" required>
+                    <br>
+                    <input type="text" id="image1" placeholder="Image-1 url" required>
+                    <br>
+                    <!-- <input type="text" id="image2" placeholder="Image-2 url" required>
+                    <br> -->
+                    <input type="text" id="price" placeholder="Price of the Product" required>
+                    <br>
+                    <input type="text" id="MRP" placeholder="MRP of the Product" required>
+                    <br>
+                    <input type="number" id="rating" step="0.01" placeholder="Product rating" required>
+                    <br>
+                    <input type="text" id="size" placeholder="Size " required>
+                    <br>
+                    <input type="text" id="color" placeholder="Color of the Product" required>
+                    <br>
+                    <input type="text" id="category" placeholder="Category" required>
+                    <br>
+                    <input type="text" id="productfor" placeholder="Product for" required>
+                    <br>
+                    <input type="submit">
+
+                </form>
+            </div>
+
+            <div id="showusers">
+                <table id="usertable">
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="showorders">
+                <table id="ordertable">
+                    <tr>
+                        <th>Order Id</th>
+                        <th>User Id</th>
+                        <th>Payment Card No.</th>
+                        <th>Product Ordered</th>
+                    </tr>
+                </table>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="./Script/myadminpage.js"></script>

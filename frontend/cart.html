@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Carter's</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/arcade/2x/shopping-cart.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Styles/cart.css">
+</head>
+
+<body>
+
+    <div class="header-container">
+        <!-- -------------------- TOP HEADER -------------------- -->
+
+        <div class="header-top">
+            <div class="top-left">
+                <ul class="top-left-items">
+                    <li id="carters-btn">
+                        CARTER'S
+                    </li>
+                    <li>
+                        OSHKOSH
+                    </li>
+                    <li>
+                        SKIP-HOP
+                    </li>
+                    <li>
+                        little planet
+                    </li>
+                </ul>
+            </div>
+
+            <div class="top-middle">
+                Free Shipping on $35+ Orders
+            </div>
+
+            <div class="top-right">
+                <div class="items" id="sign-in">
+                    <img class="cred-img"
+                        src="data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 width%3D%2232%22 height%3D%2232%22%3E%3Cpath fill%3D%22%23444%22 d%3D%22M24.205 24.963c.008-.105.012-.207.012-.299 0-2.908-1.564-5.892-3.895-7.612.495-.82.767-1.756.767-2.725 0-2.927-2.399-5.309-5.35-5.309-2.948 0-5.348 2.382-5.348 5.309 0 1.073.332 2.12.933 2.995-2.147 1.76-3.542 4.587-3.542 7.343 0 .092.004.193.012.299-2.432-2.225-3.968-5.413-3.968-8.962 0-6.709 5.461-12.17 12.174-12.17s12.174 5.46 12.174 12.17c0 3.548-1.536 6.736-3.969 8.961zm-14.597-.299c0-2.459 1.451-5.095 3.529-6.409l.991-.627-.847-.811a3.454 3.454 0 01-1.064-2.489c0-1.92 1.58-3.479 3.521-3.479 1.943 0 3.523 1.56 3.523 3.478 0 .864-.325 1.694-.915 2.34l-.783.854 1.01.564c2.248 1.254 3.816 3.96 3.816 6.579 0 .309-.082.895-.156 1.326-.492.451-2.313 1.83-6.234 1.83-3.866 0-5.704-1.283-6.205-1.705-.078-.424-.186-1.08-.186-1.451zM16 2C8.28 2 2 8.28 2 16.001S8.28 30 16 30c7.719 0 14-6.279 14-13.999S23.719 2 16 2z%22/%3E%3Cpath fill%3D%22%23fff%22 d%3D%22M16 27.82c3.922 0 5.742-1.379 6.234-1.83.074-.432.156-1.018.156-1.326 0-2.619-1.568-5.325-3.816-6.579l-1.01-.564.783-.854c.59-.646.915-1.476.915-2.34 0-1.918-1.58-3.478-3.523-3.478-1.941 0-3.521 1.56-3.521 3.479 0 .935.387 1.843 1.064 2.489l.847.811-.991.627c-2.078 1.314-3.529 3.95-3.529 6.409 0 .371.107 1.027.187 1.451.5.422 2.338 1.705 6.204 1.705z%22/%3E%3C/svg%3E"
+                        alt="">
+                    <a href="signup.html" class="cred-title" id="user-name">Sign-in</a>
+                </div>
+                <div class="items">
+                    <img src="https://img.icons8.com/ios/2x/hearts.png" alt="" class="cred-img">
+                    <a href="#" class="cred-title" id="wish-list">Hearts</a>
+                </div>
+                <div class="items">
+                    <img class="cred-img"
+                        src="data:image/svg+xml;charset=utf8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 width%3D%2232%22 height%3D%2232%22%3E%3Cpath fill%3D%22%23fff%22 d%3D%22M22.804 11.753v4.672a.882.882 0 01-.875.887.882.882 0 01-.879-.887V12.64l-4.202 2.117v12.387l9.309-4.223v-12.86zm-11.97-5.008L7.453 8.229l8.546 4.313 3.199-1.613zM24.546 8.23l-8.539-3.758L12.94 5.82l8.229 4.113zM5.843 22.922l9.309 4.215V14.758l-9.309-4.695z%22/%3E%3Cpath fill%3D%22%23444%22 d%3D%22M26.157 22.922l-9.309 4.223V14.758l4.202-2.117v3.785c0 .488.391.887.879.887a.881.881 0 00.875-.887v-4.672l3.353-1.691zM16 12.542L7.454 8.229l3.381-1.484 8.364 4.184zm-.848 14.595l-9.309-4.215v-12.86l9.309 4.695zm.856-22.665l8.539 3.758-3.377 1.703-8.229-4.113zm11.787 2.605L16.476 2.096a1.183 1.183 0 00-.937 0L4.205 7.077A1.19 1.19 0 003.5 8.163v15.524c0 .465.271.887.693 1.078l11.334 5.129c.306.141.658.141.96 0l11.319-5.129c.422-.191.693-.613.693-1.078V8.163c0-.469-.279-.895-.705-1.086z%22/%3E%3C/svg%3E"
+                        alt="">
+                    <a class="cred-title" href="#" id="orders">Orders</a>
+                </div>
+                <div class="items">
+                    <img src="https://img.icons8.com/material-outlined/2x/shopping-cart.png" alt="" class="cred-img">
+                    <a href="cart.html" class="cred-title" id="cart">Cart</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------- BOTTOM HEADER -------------------- -->
+
+
+        <div class="header-bottom">
+
+            <div class="bottom-left b-child">
+                <a href="index.html" id="home-logo">
+                    <img class="nav-logo"
+                        src="./LOGO.png"
+                        alt="">
+                </a>
+            </div>
+
+            <!-- -------------------- BOTTOM MIDDLE -------------------- -->
+
+            <div class="bottom-middle b-child">
+                <ul class="middle-elements">
+                    <li>
+                        <a href="#">Baby</a>
+                    </li>
+                    <li>
+                        <a href="#">Toddler</a>
+                    </li>
+                    <li>
+                        <a href="#">Kid</a>
+
+                    </li>
+                    <li>
+                        <a href="#">Collection</a>
+
+
+                    </li>
+                    <li>
+                        <a href="#">Sale</a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <!-- -------------------- BOTTOM RIGHT -------------------- -->
+
+            <div class="width170px">
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- <div class="cont-top"> -->
+    <div class="cart-container">
+
+        <!--------------------- ADV-HEADER  --------------------->
+
+        <div class="cart-top">
+            <h4
+                style="text-align:center;color:#444444;padding:5px;font-size:.8rem;text-transform: none;letter-spacing: .5px;">
+                <span style="color:#03A6E1">CURBSIDE PICKUP</span> only in the app! or <span style="color:#03A6E1">IN
+                    STORE PICKUP</span> super fast + free&nbsp;&nbsp; <a href="#"
+                    style=" color:#03A6E1;text-decoration: underline;" data-uw-rm-brl="false">get the details</a></h4>
+        </div>
+
+        <div class="cart-user-name">
+            <h3>
+                <span id="user-data-name">
+                    YOUR >
+                </span>cart<span id="cart-total">
+                </span>
+            </h3>
+        </div>
+
+        <div class="cart-item-cont" id="cart-container">
+
+
+            <!--------------------- CART ITEMS DATA  --------------------->
+
+            <div class="cart-left-data">
+
+                <div class="cart-addresses">
+                    <button>Ship to address</button>
+                    <button>Free Pickup in Store</button>
+                </div>
+                <h3 class="cart-status">Arrives in 3 to 10 Days</h3>
+
+                <div id="append-cart">
+
+
+                </div>
+
+            </div>
+
+            <!--------------------- CART BILL DATA  --------------------->
+
+            <div class="cart-right-data" style="height: 320px;">
+                <h3 class="order-title">Order summery</h3>
+                <div class="order-details">
+
+                    <div class="order-ele">
+                        <p>Sub Total</p>
+                        <p id="total-amount">$0</p>
+                    </div>
+
+                    <div class="order-ele">
+                        <p>Shipping</p>
+                        <p>$0</p>
+                    </div>
+
+                    <div class="order-ele">
+                        <p>Estimated tax</p>
+                        <p>$0</p>
+                    </div>
+
+                    <div class="order-ele">
+                        <h3>Order total</h3>
+                        <h3 id="grand-total">$0</h3>
+                    </div>
+
+                </div>
+                <button id="check-out">Checkout</button>
+                <p>Exact shipping and taxes are calculated at checkout.</p>
+            </div>
+
+        </div>
+
+        <div class="empty-cart" id="cart-empty-container">
+            <div>
+                <p>Your Shopping Cart is Empty</p>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 114.97 114.9'%3E%3Cdefs%3E%3Cstyle%3E.cls-1,.cls-15,.cls-3,.cls-4,.cls-5,.cls-6,.cls-8%7Bfill:none;%7D.cls-2%7Bclip-path:url(%23clip-path);%7D.cls-3%7Bstroke:%23f2bccc;%7D.cls-3,.cls-4%7Bstroke-width:15.46px;%7D.cls-4%7Bstroke:%23a7deef;%7D.cls-5%7Bstroke:%23436ca2;stroke-width:2px;stroke-dasharray:3 5;%7D.cls-5,.cls-6,.cls-8%7Bstroke-linecap:round;%7D.cls-5,.cls-6%7Bstroke-linejoin:round;%7D.cls-6,.cls-8%7Bstroke:%23444;stroke-width:5px;%7D.cls-7%7Bfill:%23444;%7D.cls-9%7Bfill:%234b6b9f;%7D.cls-10%7Bfill:%23f2bccc;%7D.cls-11%7Bfill:url(%23Unnamed_Pattern_18);%7D.cls-12%7Bfill:%23231f20;%7D.cls-13%7Bfill:%23e82f7c;%7D.cls-14%7Bfill:%2388d3e2;%7D.cls-15%7Bstroke:%23ed2e7c;stroke-miterlimit:10;stroke-width:2.58px;%7D%3C/style%3E%3CclipPath id='clip-path'%3E%3Crect id='SVGID' class='cls-1' width='104.35' height='106.29'/%3E%3C/clipPath%3E%3Cpattern id='Unnamed_Pattern_18' data-name='Unnamed Pattern 18' width='104.35' height='106.29' patternTransform='matrix(2.72, 0, 0, -2.28, -1559.06, 38711.12)' patternUnits='userSpaceOnUse' viewBox='0 0 104.35 106.29'%3E%3Crect class='cls-1' width='104.35' height='106.29'/%3E%3Cg class='cls-2'%3E%3Cline class='cls-3' x1='-3.01' y1='98.9' x2='113.82' y2='98.9'/%3E%3Cline class='cls-4' x1='-2.59' y1='84.31' x2='114.24' y2='84.31'/%3E%3Cline class='cls-3' x1='-3.44' y1='70.55' x2='113.39' y2='70.55'/%3E%3Cline class='cls-4' x1='-2.59' y1='58.53' x2='114.24' y2='58.53'/%3E%3Cline class='cls-3' x1='-3.44' y1='43.93' x2='113.39' y2='43.93'/%3E%3Cline class='cls-4' x1='-2.59' y1='31.92' x2='114.24' y2='31.92'/%3E%3Cline class='cls-3' x1='-3.44' y1='18.16' x2='113.39' y2='18.16'/%3E%3Cline class='cls-4' x1='-2.59' y1='6.14' x2='114.24' y2='6.14'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1'%3E%3Cg id='emptyCart'%3E%3Cpath id='Path-7' class='cls-5' d='M36.91,91.55q32.33-33,33.49-44.23c1.81-17.4-12.19-23.52-23-18.55S32.56,54.85,53.24,58.83q20.67,4,43.16-38.93'/%3E%3Cg id='cart-icon'%3E%3Cpolyline id='Path' class='cls-6' points='2.5 29.9 21.14 29.9 24.39 40.9 33.92 94.9 100.35 94.9 107.5 40.9 24.39 40.9'/%3E%3Ccircle id='Oval' class='cls-7' cx='51.5' cy='108.9' r='6'/%3E%3Ccircle id='Oval-Copy-3' class='cls-7' cx='86.5' cy='108.9' r='6'/%3E%3Cline id='Line-3' class='cls-8' x1='80' y1='42.9' x2='80' y2='93.25'/%3E%3Cline id='Line-3-2' data-name='Line-3' class='cls-8' x1='55' y1='42.9' x2='55' y2='93.25'/%3E%3Cline id='Line-2' class='cls-8' x1='30.5' y1='66.4' x2='100.5' y2='66.4'/%3E%3C/g%3E%3C/g%3E%3Cpath class='cls-9' d='M108,1.86a.81.81,0,0,0,.29-.19A1,1,0,0,0,108.6,1a1,1,0,0,0-.35-.75.89.89,0,0,0-.55-.2.92.92,0,0,0-.87,1,.93.93,0,0,0,.33.73l-.1.94a5.08,5.08,0,0,1,.84.19Z'/%3E%3Cpath class='cls-9' d='M113.07,6a.8.8,0,0,1,.13-.32,1,1,0,0,1,.65-.41,1,1,0,0,1,.81.2A.87.87,0,0,1,115,6a.92.92,0,0,1-.79,1,1,1,0,0,1-.79-.18l-.89.28a6.86,6.86,0,0,0-.35-.78Z'/%3E%3Cpath class='cls-10' d='M109.2,15.57c-2.45,3-6.67,3.61-9.38,1.39s-2.94-6.48-.49-9.47l1.82-2.22c2.44-3,6.66-3.61,9.38-1.39s2.93,6.48.49,9.47Z'/%3E%3Cpath class='cls-11' d='M110.06,14.52l-1.58,1.93a6.17,6.17,0,0,1-8.66.51,6.16,6.16,0,0,1-1.21-8.59l1.51-1.85A12.71,12.71,0,0,1,110.06,14.52Z'/%3E%3Cpath class='cls-12' d='M106.68,5a.41.41,0,1,1-.06-.58.42.42,0,0,1,.06.58'/%3E%3Cpath class='cls-12' d='M110.9,8.39a.4.4,0,0,1-.58.06.41.41,0,1,1,.58-.06'/%3E%3Cpath class='cls-12' d='M107,8.33l-.1-.08c-1.22-1.06-1.81-2-1.74-2.78a.12.12,0,0,1,.14-.11.12.12,0,0,1,.11.13c-.07.7.49,1.57,1.65,2.57a4.65,4.65,0,0,0,3,1.24.12.12,0,1,1,0,.24A4.75,4.75,0,0,1,107,8.33'/%3E%3Cpath class='cls-9' d='M97.74,8c-1.4-1.46-.42-1.53,1.2-4.56,2.2-4.13,3.78-.65,5,2a6,6,0,0,1-.51,6.18A9.13,9.13,0,0,1,99.54,15a3.87,3.87,0,0,1-3.26.13,3.73,3.73,0,0,1-2.23-4.05,3.33,3.33,0,0,1,3.52-3.26'/%3E%3Cpath class='cls-13' d='M101.46,9.94c-2.87-2.44-2.75-3.06-1.74-4.83,1.41-2.48,2.49-.33,3,.68a5.79,5.79,0,0,1,.68,3.55c-.13.88-.79,1.53-1.89.6'/%3E%3Cpath class='cls-10' d='M101.45,10l0,0h0c-2.94-2.49-2.76-3.17-1.75-4.94.46-.81.93-1.21,1.42-1.19.74,0,1.29,1,1.68,1.89a5.89,5.89,0,0,1,.69,3.6,1.28,1.28,0,0,1-.7,1.07A1.32,1.32,0,0,1,101.45,10Zm.07-.17c.44.38.84.51,1.15.39a1.1,1.1,0,0,0,.59-.93,5.61,5.61,0,0,0-.67-3.5c-.22-.48-.8-1.75-1.53-1.78-.41,0-.84.35-1.26,1.1-1,1.74-1.13,2.3,1.72,4.72Z'/%3E%3Cpath class='cls-13' d='M100.62,2.27a.34.34,0,0,0,.07.48.35.35,0,0,0,.48-.09.35.35,0,0,0-.07-.48.35.35,0,0,0-.48.09'/%3E%3Cpath class='cls-13' d='M102,11.47c0-.74-2.16-1.19-3.33-1.16-1.34,0-2.7.72-2.19,2.1a1.65,1.65,0,0,0,1.29.89c1.73.31,4.31-1.41,4.23-1.83'/%3E%3Cpath class='cls-10' d='M96.8,13a1.2,1.2,0,0,1-.39-.52,1.35,1.35,0,0,1,.1-1.29,2.69,2.69,0,0,1,2.16-.91,5.59,5.59,0,0,1,3.23.85.5.5,0,0,1,.17.39c0,.1-.06.23-.22.39a5.77,5.77,0,0,1-4.09,1.52A2.12,2.12,0,0,1,96.8,13Zm4.91-1.84a5.88,5.88,0,0,0-3-.73,2.6,2.6,0,0,0-2,.84,1.23,1.23,0,0,0-.08,1.16,1.6,1.6,0,0,0,1.23.85,5.73,5.73,0,0,0,4-1.47c.16-.16.19-.25.18-.28h0a.34.34,0,0,0-.13-.29A.27.27,0,0,0,101.71,11.11Z'/%3E%3Cpath class='cls-13' d='M96.18,14a.39.39,0,0,1-.54-.13.41.41,0,0,1,.15-.54.38.38,0,0,1,.53.12.41.41,0,0,1-.14.55'/%3E%3Cpath class='cls-14' d='M95.5,12.19a.63.63,0,0,1-.88-.2.67.67,0,0,1,.24-.89.63.63,0,0,1,.88.2.66.66,0,0,1-.24.89'/%3E%3Cpath class='cls-15' d='M95.5,12.19a.63.63,0,0,1-.88-.2.67.67,0,0,1,.24-.89.63.63,0,0,1,.88.2A.66.66,0,0,1,95.5,12.19Z'/%3E%3Cpath class='cls-9' d='M109.14,17.34c1.7,1.08,1.58.11,4.23-2.08,3.61-3-.11-3.83-2.91-4.46a6,6,0,0,0-6,1.72A9.11,9.11,0,0,0,101.91,17a3.87,3.87,0,0,0,.51,3.22,3.71,3.71,0,0,0,4.41,1.38,3.31,3.31,0,0,0,2.5-4.08'/%3E%3Cpath class='cls-13' d='M106.49,14.08c3,2.33,3.54,2.09,5.08.75,2.15-1.87-.17-2.51-1.25-2.76a5.83,5.83,0,0,0-3.62,0c-.83.3-1.34,1.07-.21,2'/%3E%3Cpath class='cls-10' d='M106.39,14.11c-.6-.49-.67-.92-.63-1.19a1.26,1.26,0,0,1,.91-.9,6,6,0,0,1,3.67,0c.92.22,2,.56,2.18,1.28.11.47-.19,1-.89,1.63-1.54,1.34-2.17,1.64-5.19-.74h0ZM112,12.84a4.73,4.73,0,0,0-1.73-.69,5.66,5.66,0,0,0-3.56,0,1.11,1.11,0,0,0-.8.76c-.05.33.16.71.62,1.06h0c2.93,2.31,3.45,2.07,5,.75.65-.57.94-1,.84-1.45A1,1,0,0,0,112,12.84Z'/%3E%3Cpath class='cls-13' d='M114.17,13.39a.34.34,0,0,1-.48,0,.35.35,0,0,1,0-.49.34.34,0,0,1,.48,0,.36.36,0,0,1,0,.49'/%3E%3Cpath class='cls-13' d='M104.88,13.85c.72-.19,1.6,1.89,1.8,3,.23,1.32-.17,2.78-1.62,2.55a1.65,1.65,0,0,1-1.14-1.08c-.64-1.64.54-4.5,1-4.51'/%3E%3Cpath class='cls-10' d='M104.46,19.24a2,2,0,0,1-.61-.85,5.8,5.8,0,0,1,.68-4.31c.13-.2.24-.29.34-.3a.52.52,0,0,1,.42.09,5.59,5.59,0,0,1,1.46,3,2.7,2.7,0,0,1-.45,2.3,1.41,1.41,0,0,1-1.26.35A1.26,1.26,0,0,1,104.46,19.24Zm.84-5.18-.09-.07a.42.42,0,0,0-.31-.07h0s-.11.05-.23.23a5.69,5.69,0,0,0-.66,4.17,1.59,1.59,0,0,0,1.08,1,1.23,1.23,0,0,0,1.12-.31,2.52,2.52,0,0,0,.42-2.16A6,6,0,0,0,105.3,14.06Z'/%3E%3Cpath class='cls-13' d='M103.55,20.06a.38.38,0,0,0,.22.5.41.41,0,0,0,.51-.25.39.39,0,0,0-.23-.5.4.4,0,0,0-.5.25'/%3E%3Cpath class='cls-14' d='M105.46,20.36a.63.63,0,0,0,.37.82.66.66,0,0,0,.83-.4.64.64,0,0,0-.38-.83.66.66,0,0,0-.82.41'/%3E%3Cpath class='cls-15' d='M105.46,20.36a.63.63,0,0,0,.37.82.66.66,0,0,0,.83-.4.64.64,0,0,0-.38-.83A.66.66,0,0,0,105.46,20.36Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
+                    alt="">
+                <button id="go-home">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot_line"></div>
+    <div id="footer">
+
+        <div id="SUPPORT">
+            <h1>SUPPORT</h1>
+            <p>Customer Service</p>
+            <p>Accessibility Support</p>
+            <p>Shipping</p>
+            <p>Returns</p>
+            <p>Gift Cards</p>
+            <p>Today's Deals</p>
+            <p>Size Chart</p>
+            <p>My Account</p>
+            <p>Carter's® Credit Card</p>
+            <p>My Rewarding Moments®</p>
+            <p>Contact Us</p>
+
+
+        </div>
+        <div id="ABOUT">
+            <h1>ABOUT US</h1>
+            <p>Carter's Inc.</p>
+            <p>Life With Kids</p>
+            <p>Baby of the Month Contest</p>
+            <p>All Store Locations</p>
+            <p>Join Carter's Affliate Program</p>
+            <p>Investor Relations</p>
+            <p>Careers</p>
+            <p>Raise the Future</p>
+
+        </div>
+        <div id="bottom">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_VjHyDHHS3WjYHO3j0P0s3vLcdJZfze0s2VzUP8&s"
+                    alt="">
+
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp0XcVN1CnyBdzzrjdF4zQF4wmK6qv4z-hdA&usqp=CAU"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/81/81609.png" alt="">
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMZLrQ8JQsVrwvA8v9lCh9nzjqcITzrSLk0OdkDbE&s"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://w7.pngwing.com/pngs/174/124/png-transparent-pittsburgh-logo-black-icon-pinterest-text-trademark-meme-thumbnail.png"
+                    alt="">
+            </div>
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYkONvwtQQZzBBbQZs54sEZvAd5kq8ec2c9g&usqp=CAU"
+                    alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="foot_line"></div>
+    <div id="end">
+        <p>*EXCLUSIONS AND DISCLAIMERS.</p>
+        <p>UP TO 50% OFF: Savings based on MSRP. Excludes Select New Arrivals, LITTLE PLANET®, Sneak Peek, Treasure
+            Box, Licensed Styles, SKIP HOP®, Doorbusters, and Clearance. Other exclusions may apply.</p>
+        <p>UP TO 70% OFF CLEARANCE: Savings based on MSRP.</p>
+        <p>*MSRP is our Manufacturer’s Suggested Retail Price at which we suggest our collections be initially
+            offered. We list an MSRP on our products that we sell ourselves and that sell through our wholesale
+            partners. Our wholesale partners are free to use our MSRP or set a different selling price. We generally
+            introduce our new collections at MSRP on our website. Since MSRP is a suggested price, actual sales may
+            or may not have been made at MSRP in any certain area or in all areas. Prices may vary by channel or
+            location.</p>
+        <p>Many of our collections have a DOB (Date of Birth) on the price tag or on their website product page.
+            This is the date that this item or a similar item was originally offered for sale at the MSRP.</p>
+    </div>
+
+
+</body>
+
+<script src="./Script/cart.js">
+
+
+
+</script>
+
+</html>
