@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="payment.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="mainscreen">
+      <!-- <img src="https://image.freepik.com/free-vector/purple-background-with-neon-frame_52683-34124.jpg"  class="bgimg " alt="">-->
+      <div class="card">
+        <div class="leftside">
+          <!-- <img
+            src="/image/tribawala-removebg-preview.png"
+            class="product"
+            alt="Shoes"
+          /> -->
+        </div>
+        <div class="rightside">
+          <form  id="payment_form">
+            <h1>CheckOut</h1>
+            <h2>Payment Information</h2>
+            <p>User Name</p>
+            <input type="text" id="name" class="inputbox" name="name" required />
+            <p>User Email</p>
+            <input type="email" id="email" class="inputbox" name="email" required />
+
+            <p>Total amount</p>
+            <input
+              type="number"
+              class="inputbox"
+              name="total_amount"
+              id="total_amount"
+              required
+            />
+
+            <button type="submit" id="payment_button" class="button">CheckOut</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="payment.js"></script>
+</html>
