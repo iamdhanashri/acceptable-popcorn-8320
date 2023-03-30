@@ -1,0 +1,430 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* <!--------------------- NAV-BAR CSS  ---------------------> */
+
+
+.header-container{
+    font-family: 'Poppins', sans-serif;
+  }
+  .header-top{
+      padding-top: 3px;
+      display: flex;
+      align-items: center;
+      background-color: #f9f9f9;
+  }
+  .header-top>div{
+      flex-basis:33%;
+  }
+  
+  .header-top > .top-left > .top-left-items{
+      display: flex;
+      padding: 0px 10px;
+  }
+  .header-top > .top-left > .top-left-items > li{
+      list-style: none;
+      padding: 7px;
+      font-size: 11px;
+      font-weight: bold;
+      color: rgb(170, 170, 170);
+      letter-spacing: 1px;
+  }
+  .header-top > .top-left > .top-left-items > li:hover{
+      color: gray;
+      cursor: pointer;
+  }
+  
+  /* -------------------- TOP-NAV MIDDLE -------------------- */
+  
+  .header-top>.top-middle{
+      display: flex;
+      justify-content: center;
+      font-size: 14px;
+      color: #444444;
+  }
+  
+  /* -------------------- TOP-NAV RIGHT-part -------------------- */
+  
+  .top-right,.top-right>div {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 10px;
+  }
+  .top-right > .items > img{
+      width: 23px;
+  }
+  .top-right > .items > a{
+      color: #7d7d7d;
+      text-decoration: none;
+      font-size: 13px;
+  }
+  .top-right > .items > a:hover{
+      text-decoration: underline;
+  }
+  
+  /* -------------------- BOTTOM NAV  -------------------- */
+  
+  .header-bottom {
+      position: relative;
+      display: flex;
+      height: 90px;
+      justify-content: space-evenly;
+      align-items: center;
+      border: 1px solid #ebebeb;
+      background-color: white;
+      font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .res-bar{
+      display: none;
+  }
+  
+  /* -------------------- BOTTOM Mid-part -------------------- */
+  
+  .header-bottom > .bottom-middle > ul{
+      display: flex;
+  }
+  .header-bottom > .bottom-middle > ul > li{
+      list-style: none;
+      padding: 0px 13px;
+  }
+  .header-bottom > .bottom-middle > ul > li > a {
+      color: black;
+      font-size: 18px;
+      text-decoration: none;
+      padding: 30px 20px;
+  }
+  .header-bottom > .bottom-middle > ul > li >a:hover{
+    border-bottom: 3px solid #00a9e0;
+}
+  
+  /* -------------------- BOTTOM Left-part -------------------- */
+  
+  .header-bottom > .bottom-left > a > img{
+      padding-top: 10px;
+      width: 140px;
+  }
+
+
+
+/* <!------------------------------------------ CART CSS  ------------------------------------------> */
+
+.cart-container {
+    margin: 50px 80px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cart-user-name > h3{
+    margin: 10px 0px;
+    font-size: 18px;
+}
+.cart-item-cont{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-left-data{
+    width: 66%;
+}
+.cart-item-cont{
+    flex-basis: 70%;
+}
+
+/* <!--------------------- CART ADDRESSES  ---------------------> */
+
+.cart-addresses{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-addresses > button {
+    width: 49%;
+    padding: 8px;
+    border-radius: 4px;
+    border-width: thin;
+    font-weight: bold;
+}
+.cart-addresses > button:nth-child(1){
+    background-color: #00a9e0;
+    color: white;
+    border: none;
+}
+.cart-addresses > button:nth-child(2){
+    background-color: transparent;
+    color: #707370;
+}
+.cart-addresses > button:hover{
+    cursor: pointer;
+}
+.cart-addresses > button:hover:nth-child(1){
+    background-color: #0d97c5;
+}
+
+/* <!--------------------- CART-ITEMS DATA  ---------------------> */
+
+.cart-status{
+    margin: 30px 0px;
+}
+#append-cart{
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 10px;
+}
+#append-cart::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  #append-cart::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #cfcbcb; 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  #append-cart::-webkit-scrollbar-thumb {
+    background: #00a9e0; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  #append-cart::-webkit-scrollbar-thumb:hover {
+    cursor:pointer;
+    border-width:2px solid;
+  }
+.cart-item{
+    display: flex;
+    padding: 15px 10px;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    border-radius: 5px;
+    margin: 10px 0px;
+}
+.cart-item-image > img {
+    width: 76px;
+}
+.cart-item-info{
+    font-size: 14px;
+    color: #232323;
+    width: 40%;
+    margin: 0px 8px;
+}
+.item-qnt {
+    width: 35%;
+    margin: 0px 25px;
+    font-size: 14px;
+}
+.dec{
+    padding: 0px 5px;
+}
+.inc{
+    padding: 0px 4px;
+}
+.item-quant{
+    margin: 0px 5px;
+}
+.dec:hover,.inc:hover{
+    cursor: pointer;
+}
+.remove-item {
+    background-color: #ff4646eb;
+    color: white;
+    padding: 4px 8px;
+    font-size: 10px;
+    border-radius: 7px;
+    margin-top: 43px;
+    border: none;
+    font-weight: bold;
+    letter-spacing: .5px;
+}
+.remove-item:hover {
+    cursor: pointer;
+    background-color: red;
+}
+.price{
+    text-align: right;
+}
+
+/* <!--------------------- CART BILL DATA  ---------------------> */
+
+.cart-right-data{
+    width: 30%;
+    padding: 15px 10px;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    border-radius: 5px;
+    height: 320px;
+}
+.order-ele  {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.order-title{
+    border-bottom: 1px dashed;
+    padding-bottom: 10px;
+}
+#check-out{
+    margin: auto;
+    margin-top: 20px;
+    display: block;
+    padding: 9px 0px;
+    font-weight: bolder;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+    background-color: #00a9e0;
+    border: none;
+    letter-spacing: 1px;
+}
+#check-out:hover{
+    cursor: pointer;
+    background-color:#0d97c5;
+}
+.order-details{
+    border-bottom: 1px dashed;
+}
+.order-details > div:nth-child(1){
+    margin-top: 8px;
+}
+.order-details > div:nth-child(4){
+    margin-bottom: 10px;
+}
+.cart-right-data > p{
+    font-size: 11px;
+    text-align: center;
+    margin-top: 12px;
+}
+.extra-items{
+    margin: 80px;
+    border: 1px solid;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 50px;
+}
+
+
+/* EMPTY CART  */
+
+.empty-cart {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 70px 0px;
+}
+.empty-cart > div{
+    text-align: center;
+}
+.empty-cart > div > img  {
+    padding: 11px 9px;
+    width: 143px;
+}
+.empty-cart > div > button  {
+    margin: auto;
+    margin-top: 4px;
+    display: block;
+    padding: 13px 0px;
+    font-weight: bolder;
+    width: 300px;
+    color: white;
+    border-radius: 5px;
+    background-color: #00a9e0;
+    border: none;
+    letter-spacing: 1px;
+}
+.empty-cart > div > button:hover{
+    cursor: pointer;
+    background-color:#1999c2;
+}
+
+
+/* FOOTER CSS  */
+
+
+#footer {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: rgb(243, 243, 243);
+    /* border: 2px solid cyan; */
+}
+#SUPPORT{
+    width: 50%;
+    height: 70%;
+    /* border: 2px solid red; */
+    margin-left: 8%;
+    margin-top: 15%;
+
+
+}
+.foot_line{
+    width: 100%;
+    height: 0.02%;
+    background-color: rgb(208, 208, 208);
+}
+#SUPPORT h1 {
+    font-size: 100%;
+}
+#SUPPORT p {
+    font-size: 95%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color:grey;
+    padding: 5px;
+    
+}
+#ABOUT{
+    width: 50%;
+    height: 70%;
+    /* border: 2px solid red; */
+    margin-top: 15%;
+
+}
+#ABOUT h1 {
+    font-size: 100%;
+}
+#ABOUT p {
+    font-size: 95%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color:grey;
+    padding: 5px;
+}
+#bottom{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 40%;
+    width: 50%;
+    height: 50%;
+    /* border: 1px solid black; */
+    margin-left: 20%;
+    /* margin-left: 60%; */
+    
+}
+#bottom div{
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+#bottom img {
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+}
+#end{
+    width: 100%;
+    height: fit-content;
+    /* border: 1px solid black; */
+}
+#end p {
+    font-size: 80%;
+    color:grey;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 6px;
+}
