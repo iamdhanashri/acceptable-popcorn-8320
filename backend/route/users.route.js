@@ -9,6 +9,9 @@ const { authMiddleware } = require('../middlewares/authenticate.middleware');
 const { redisClient } = require('../server/redis');
 
 
+const client_id = "cf354e9ae95c40db9ada"
+const client_secret = "e50c4a1e09399b84a1fc6d1cb5edaf09913a16ec"
+// https://github.com/login/oauth/authorize?client_id=cf354e9ae95c40db9ada
 // signup
 
 userRouter.post("/signup",async(req,res,next)=>{
