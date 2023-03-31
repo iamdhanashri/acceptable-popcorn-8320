@@ -4,6 +4,8 @@ const {connection}=require("./config/db")
 const { authMiddleware } = require("./middlewares/authenticate.middleware")
 
 const { userRouter } = require("./route/users.route")
+const {productrouter}=require("./route/product.route")
+
 const cors = require("cors")
 
 // const {authMiddleware}=require("./midddlewares/authenticate.middleware")
@@ -29,13 +31,13 @@ app.use(cors())
 
 
 app.use("/users", userRouter)
-app.use(authMiddleware)
+// app.use(authMiddleware)
 
+app.use("/product",productrouter)
 
-
-app.get("/product",(req,res)=>{
-    res.send("products...")
-})
+// app.get("/product",(req,res)=>{
+//     res.send("products...")
+// })
 
 
 // oauth  
