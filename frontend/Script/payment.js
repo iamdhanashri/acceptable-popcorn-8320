@@ -22,13 +22,13 @@ async function payment(event){
     data={
         "purpose":"Upstyle Payment",
         "name":username,
-        "total_amount":total,
+        "amount":total,
         "email":Email
         
 
     }
 
-    let res=await fetch("http://localhost:2020/payment/pay",{
+    let res=await fetch("http://localhost:8080/payment/pay",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
@@ -38,7 +38,8 @@ async function payment(event){
     if(res.ok){
         let url=await res.json()
         console.log(url)
-        console.log(url.message)
+        console.log(url.msg)
+        alert(url.msg)
     }
     
 }

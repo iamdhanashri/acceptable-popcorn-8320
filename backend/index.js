@@ -1,4 +1,5 @@
 const express=require("express")
+const bodyParser = require( 'body-parser' );
 
 const {connection}=require("./config/db")
 const { authMiddleware } = require("./middlewares/authenticate.middleware")
@@ -6,7 +7,12 @@ const { authMiddleware } = require("./middlewares/authenticate.middleware")
 const { userRouter } = require("./route/users.route")
 const {productrouter}=require("./route/product.route")
 
+// paymnet router
+const {paymentrouter}=require("./route/payment.router")
+
 const cors = require("cors")
+
+
 
 // const {authMiddleware}=require("./midddlewares/authenticate.middleware")
 require("dotenv").config()
@@ -27,12 +33,16 @@ const client_secret="fd7995732594859f9e67979011464bbf65f29d0c"
 
 
 app.use(express.json())
-app.use(cors())
 
+app.use(cors({
+    origin:"*"
+}))
 
+app.use( bodyParser.urlencoded( { extended: false } ) );
+app.use( bodyParser.json() );
 // get route for getting product
 
-
+app.use("/payment",paymentrouter)
 
 app.use("/users", userRouter)
 // app.use(authMiddleware)
@@ -42,6 +52,7 @@ app.use("/product",productrouter)
 // app.get("/product",(req,res)=>{
 //     res.send("products...")
 // })
+
 
 
 
