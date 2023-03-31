@@ -44,15 +44,6 @@ app.use("/product",productrouter)
 // })
 
 
-// oauth  
-
-app.get("/",(req,res)=>{
-    res.send("API base endpoint")
-})
-
-app.get("/login",(req,res)=>{
-    res.sendFile(_dirname + "/index.html")
-})
 
 //git oauth
 
@@ -84,7 +75,9 @@ console.log(userDetails)
 
 
 //   res.send("xyz")
-res.sendFile(_dirname + "/index.html")
+
+res.sendFile(__dirname + "../index.html")
+
 
 
     })
