@@ -1,5 +1,6 @@
 let container = document.getElementById("listedproduct");
 let cartdata=JSON.parse(localStorage.getItem("cart_data")) || [];
+let cartdetail=JSON.parse(localStorage.getItem("cartdetail")) || [];
 let sorted_value=document.getElementById("sorting-data")
 let username= document.getElementById("user-name")
 
@@ -71,6 +72,24 @@ function rendercard(data) {
                 localStorage.setItem("cart_data", JSON.stringify(cartdata));
                 alert("PRODUCT ADDED TO CART SUCCESSFULLY");
             }
+        })
+        img.addEventListener("click",(e)=>{
+            e.preventDefault()
+            if(cartdetail.length>0){
+                cartdetail.length=0;
+       
+            }else{
+                
+            cartdetail.push(element);
+
+            localStorage.setItem("cartdetail", JSON.stringify(cartdetail));
+            window.location.href="productdetail.html"
+
+
+            }
+
+
+
         })
 
         div2.append(p1, p2,p3);

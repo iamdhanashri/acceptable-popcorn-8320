@@ -12,6 +12,45 @@
            
           
         
+        }.comment{
+          margin-top: 60px;
+        }#text{
+          width: 700px;
+        }.btn-c{
+          float: right;
+        }.textpart{
+          width: 700px;
+        }.comment-container{
+          margin-top: 30px;
+    
+          width: 700px;
+       
+        }.comment-container h3{
+       margin-bottom: 2px;
+
+        }.comment-container p{
+        margin: 2px;
+
+        }.box1{
+          width: 700px;
+          /* border: 1px solid black; */
+          margin-top: 5px;
+        padding-left: 6px;
+        background-color:rgb(227, 247, 255);
+        animation:something .6s ease forwards ;
+        }
+        @keyframes something {
+          0%{
+            transform: translateY(-30px);
+            opacity: 0;
+
+          }
+          100%{
+            transform: translateY(0px);
+            opacity: 1;
+
+
+          }
         }
         img{
             width:100%
