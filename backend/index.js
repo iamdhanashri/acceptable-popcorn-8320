@@ -18,7 +18,11 @@ const app=express()
 // oauth 
 
 
-const client_id="f09969c36e505a1ad4a9"
+// const client_id="f09969c36e505a1ad4a9"
+const client_id="2830a210be5bf61c5047"
+
+const client_secret="fd7995732594859f9e67979011464bbf65f29d0c"
+
 
 
 
@@ -40,15 +44,43 @@ app.use("/product",productrouter)
 // })
 
 
-// oauth  
 
-app.get("/",(req,res)=>{
-    res.send("API base endpoint")
-})
+//git oauth
 
-app.get("/login",(req,res)=>{
-    res.sendFile(_dirname + "/index.html")
-})
+app.get("/auth/github",async(req,res)=>{
+    const {code}=req.query
+   const accessToken= await fetch("https://github.com/login/oauth/access_token",{
+        method:"POST",
+        headers:{
+        Accept:"application/json",
+        "content-type":"application/json"
+        },
+        body:JSON.stringify({
+            client_id:client_id,
+            client_secret:client_secret,
+            code
+        })
+    }).then((res)=>res.json())
+
+  const abc=accessToken.access_token
+
+  const userDetails=await fetch("https://api.github.com/user",{
+    method:"GET",
+    headers:{
+        Authorization:`Bearer ${abc}`
+    }
+}).then((res)=>res.json())
+
+console.log(userDetails)
+
+
+//   res.send("xyz")
+
+res.sendFile(__dirname + "../index.html")
+
+
+
+    })
 
 
 
