@@ -74,9 +74,9 @@ app.get("/auth/github",async(req,res)=>{
 console.log(userDetails)
 
 
-//   res.send("xyz")
+  res.send("xyz")
 
-res.sendFile(__dirname + "../index.html")
+// res.sendFile(__dirname + "../index.html")
 
 
 
