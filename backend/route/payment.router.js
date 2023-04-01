@@ -47,7 +47,11 @@ paymentrouter.post("/pay",async(req,res)=>
             } else {
               // Payment redirection link at response.payment_request.longurl
               console.log(response);
-              res.send({"msg":"please check ur email "})
+              const responseData = JSON.parse( response )
+              const redirectUrl = responseData.payment_request.longurl;
+              console.log(redirectUrl)
+              
+              res.send({"message": "Please check your email to make payment",redirectUrl})
             }
           })
 
