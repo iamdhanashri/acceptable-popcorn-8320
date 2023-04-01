@@ -33,7 +33,7 @@ if(username.innerText=="Sign In"){
 
 username.addEventListener('click', async () => {
     try {
-      const response = await fetch('http://localhost:8080/users/logout', {
+      const response = await fetch('https://itchy-plum-sheep.cyclic.app/users/logout', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`

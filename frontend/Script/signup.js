@@ -25,7 +25,7 @@ registerform.addEventListener("submit", (e) => {
     // console.log(obj)
     if (obj.password == obj.cpassword) {
 
-        fetch("http://localhost:8080/users/signup",
+        fetch("https://itchy-plum-sheep.cyclic.app/users/signup",
             {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -60,7 +60,7 @@ loginform.addEventListener("submit", (e) => {
         pass: loginform.pass.value,
     }
 
-    fetch("http://localhost:8080/users/login",
+    fetch("https://itchy-plum-sheep.cyclic.app/users/login",
         {
             method: "POST",
             headers: { "Content-Type": "application/json" },
