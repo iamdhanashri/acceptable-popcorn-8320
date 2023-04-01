@@ -6,6 +6,7 @@ const { authMiddleware } = require("./middlewares/authenticate.middleware")
 
 const { userRouter } = require("./route/users.route")
 const {productrouter}=require("./route/product.route")
+const { orderrouter } = require("./routes/order.route")
 
 // paymnet router
 const {paymentrouter}=require("./route/payment.router")
@@ -40,6 +41,12 @@ app.use(cors({
 
 app.use( bodyParser.urlencoded( { extended: false } ) );
 app.use( bodyParser.json() );
+
+
+app.get("/", (req, res) => {
+    res.send("Backend HomePage")
+})
+
 // get route for getting product
 
 app.use("/payment",paymentrouter)
@@ -48,6 +55,8 @@ app.use("/users", userRouter)
 // app.use(authMiddleware)
 
 app.use("/product",productrouter)
+
+app.use("/order", orderrouter)
 
 // app.get("/product",(req,res)=>{
 //     res.send("products...")

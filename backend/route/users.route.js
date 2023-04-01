@@ -112,6 +112,14 @@ userRouter.get("/logout",authMiddleware,async(req,res)=>{
     }
 })
 
+//getting all users
+
+userRouter.get("/",async(req,res)=>{
+
+    let users=await UserModel.find();
+    res.send(users)
+})
+
 
 
 module.exports = { userRouter }
