@@ -1,39 +1,39 @@
-let username= document.getElementById("user-name")
+let username1= document.getElementById("user-name")
 
-let myname=localStorage.getItem("name");
+let myname1=localStorage.getItem("name");
 
-if(myname){
-    username.innerHTML=myname
+if(myname1){
+    username1.innerHTML=myname1
 }
 
 const token = localStorage.getItem('token');
 
 
 if (token) {
-  username.innerText = 'Logout';
+  username1.innerText = 'Logout';
 } else {
-  username.innerText = 'Sign In';
+  username1.innerText = 'Sign In';
 
 }
 
-if(username.innerText=="Logout"){
+if(username1.innerText=="Logout"){
 
-username.setAttribute("href", "index.html");
+username1.setAttribute("href", "index.html");
 
-username.addEventListener("click",()=>{
+username1.addEventListener("click",()=>{
 alert("You Logout Sucessfully")
 })
     
 }
-if(username.innerText=="Sign In"){
+if(username1.innerText=="Sign In"){
 
-    username.setAttribute("href", "signup.html");
+    username1.setAttribute("href", "signup.html");
         
     }
 
-username.addEventListener('click', async () => {
+username1.addEventListener('click', async () => {
     try {
-      const response = await fetch('https://itchy-plum-sheep.cyclic.app/users/logout', {
+      const response = await fetch('http://localhost:8080/users/logout', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
