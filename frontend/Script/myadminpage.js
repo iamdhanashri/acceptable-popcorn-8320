@@ -116,7 +116,7 @@ addProduct.addEventListener("click", () => {
         }
         console.log(obj)
 
-        let res = await fetch("https://itchy-plum-sheep.cyclic.app/product/create",
+        let res = await fetch("https://busy-cyan-cheetah-garb.cyclic.app/product/create",
             {
                 method: "POST",
                 headers: {
