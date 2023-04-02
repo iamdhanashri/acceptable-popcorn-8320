@@ -55,20 +55,41 @@ paymentrouter.post("/pay",async(req,res)=>
             }
           })
 
-// sucess router if i sucessfully make payment u will go inside ths router
-
-app.get("/success",(req,res)=>
-{
-    res.send("payment sucessfull please check your mail for invoice and pdf")
-})
 
         
 
 
         // res.send({"message":"insta mojo","data":req.body})
     } catch (error) {
-        
+        res.send(error)
     }
+})
+
+
+
+// sucess router if i sucessfully make payment u will go inside ths router
+
+paymentrouter.get("/success",(req,res)=>
+{
+    // let url_parts = url.parse( req.url, true),
+	// 	responseData = url_parts.query;
+    //     if ( responseData.payment_id ) {
+    //         // let userId = responseData.user_id;
+    
+    //         // Save the info that user has purchased the bid.
+    //         // const bidData = {};
+    //         // bidData.package = 'Bid100';
+    //         // bidData.bidCountInPack = '10';
+    
+    //         // User.findOneAndUpdate( { _id: userId }, { $set: bidData }, { new: true } )
+    //         // 	.then( ( user ) => res.json( user ) )
+    //         // 	.catch( ( errors ) => res.json( errors ) );
+    
+    //         // Redirect the user to payment complete page.
+    //         return res.redirect('' );
+    //     }
+    return res.redirect('https://course.masaischool.com/dashboard' );
+    // res.send("payment sucessfull please check your mail for invoice and pdf")
 })
 
 
