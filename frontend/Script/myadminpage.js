@@ -138,7 +138,7 @@ userBtn.addEventListener("click", async () => {
     showorders.style.display = "none";
     showusers.style.display = "block";
 
-    let res = await fetch("https://itchy-plum-sheep.cyclic.app/user")
+    let res = await fetch("https://itchy-plum-sheep.cyclic.app/users")
     let data = await res.json()
     console.log(data)
 
