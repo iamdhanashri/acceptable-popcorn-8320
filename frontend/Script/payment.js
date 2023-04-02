@@ -28,7 +28,7 @@ async function payment(event){
 
     }
 
-    let res=await fetch("http://localhost:8080/payment/pay",{
+    let res=await fetch("https://itchy-plum-sheep.cyclic.app/payment/pay",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
