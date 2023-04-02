@@ -15,7 +15,7 @@ if (token) {
   username1.innerText = 'Sign In';
 
 }
-
+4
 if(username1.innerText=="Logout"){
 
 username1.setAttribute("href", "index.html");
@@ -33,7 +33,7 @@ if(username1.innerText=="Sign In"){
 
 username1.addEventListener('click', async () => {
     try {
-      const response = await fetch('http://localhost:8080/users/logout', {
+      const response = await fetch('https://itchy-plum-sheep.cyclic.app/users/logout', {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${localStorage.getItem('token')}`
