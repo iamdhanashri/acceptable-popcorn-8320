@@ -28,7 +28,7 @@ async function payment(event){
 
     }
 
-    let res=await fetch("https://itchy-plum-sheep.cyclic.app/payment/pay",{
+    let res=await fetch("http://localhost:8080/payment/pay",{
         method:"POST",
         headers:{
             "Content-Type":"application/json"
@@ -49,6 +49,11 @@ async function payment(event){
         //   }, 500);
     }
     
+    name.value=""
+    email.value=""
 }
 
 
+
+// https://itchy-plum-sheep.cyclic.app/
+// http://localhost:8080
