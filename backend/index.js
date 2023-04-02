@@ -6,7 +6,7 @@ const { authMiddleware } = require("./middlewares/authenticate.middleware")
 
 const { userRouter } = require("./route/users.route")
 const {productrouter}=require("./route/product.route")
-const { orderrouter } = require("./routes/order.route")
+const { orderrouter } = require("./route/order.route")
 
 // paymnet router
 const {paymentrouter}=require("./route/payment.router")
