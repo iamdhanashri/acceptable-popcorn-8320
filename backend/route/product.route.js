@@ -82,11 +82,11 @@ productrouter.post("/create", async (req, res) => {
 })
 
 
-productrouter.patch("/update", authMiddleware, async (req, res) => {
+productrouter.patch("/update", async (req, res) => {
 
 })
 
-productrouter.delete("/delete/:_id", authMiddleware, async (req, res) => {
+productrouter.delete("/delete/:_id", async (req, res) => {
 
     await ProductModel.findByIdAndDelete(req.params);
     res.send({ "msg": "Product Deleted" })

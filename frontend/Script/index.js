@@ -21,6 +21,7 @@ if(username1.innerText=="Logout"){
 username1.setAttribute("href", "index.html");
 
 username1.addEventListener("click",()=>{
+  
 alert("You Logout Sucessfully")
 })
     
