@@ -3,17 +3,20 @@ let totalitem = document.querySelector("#pricedetail span");
 //if cart length is 1 then inserts item otherwise items
 totalitem.innerHTML = `${4} Items`; //make it dynamic
 
-let finalamt = document.getElementById("totalamount");
-let amt = JSON.parse(localStorage.getItem("totalcartvalue"))||500;
-finalamt.innerText = `Rs. ${amt} /-`;
+
 
 let totalmrp = document.getElementById("totalmrp");
-let totalamt = JSON.parse(localStorage.getItem("totalmrp"))|600;
+let totalamt = JSON.parse(localStorage.getItem("total_price"))|600;
 totalmrp.innerText = `Rs. ${totalamt} /-`;
 
 let totaldiscount = document.getElementById("discountmrp");
-let totaldsc = JSON.parse(localStorage.getItem("discount"))||700;
+let totaldsc = JSON.parse(localStorage.getItem("discount"))||200;
 totaldiscount.innerText = `Rs. ${totaldsc} /-`;
+
+let finalamt = document.getElementById("totalamount");
+// let amt = JSON.parse(localStorage.getItem("totalcartvalue"))||500;
+let amt=totalamt-totaldsc
+finalamt.innerText = `Rs. ${amt} /-`;
 
 let addbtn = document.getElementById("addbutton");
 // addbtn.addEventListener("click", async () => {
