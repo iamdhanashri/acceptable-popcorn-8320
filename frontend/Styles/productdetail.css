@@ -59,13 +59,36 @@
                 text-align:left;
          
           
-            margin-left: 200px;
+            margin-left: 100px;
             padding-top: 30px;
           
         }
         h2{
            margin: auto;
-        }.btn{
+           font-size:40px;
+        }h3{
+          font-size: 24px;
+          margin: 10px;
+        }.price{
+          width: 750px;
+          border: 1px solid black;
+          margin-top: 10px;
+          border-radius: 6px;
+          box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+        .price:hover{
+          color: red;
+          background-color:rgb(66, 170, 235);;
+          text-shadow: 0 0 5px #ffffff,
+                       0 0 10px #ffffff,
+                       0 0 20px #ffffff,
+                       0 0 40px #ffffff,
+                       0 0 80px #ffffff;
+          cursor: pointer;
+       }.comment{
+          font-size: 25px;
+        }
+        .btn{
             border-radius: 8px;
             background-color: rgb(66, 170, 235);
   cursor: pointer;
