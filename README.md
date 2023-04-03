@@ -3,3 +3,5 @@ This project is an E-commerce web application pertaining to children's apparel f
 The Tech stack used in this project are
 
 HTML | CSS | Javascript | NodeJS | MongoDB | Redis
+
+Netlify Link<a href="https://itchy-plum-sheep.cyclic.app/">  Click here</a> <br>
