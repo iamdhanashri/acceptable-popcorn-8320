@@ -4,4 +4,6 @@ The Tech stack used in this project are
 
 HTML | CSS | Javascript | NodeJS | MongoDB | Redis
 
-Netlify Link<a href="https://itchy-plum-sheep.cyclic.app/">  Click here</a> <br>
+Netlify Link<a href="https://stirring-lokum-bf0ef8.netlify.app/">  Click here</a> <br>
+
+Cyclic Link<a href="https://itchy-plum-sheep.cyclic.app/">  Click here</a> <br>
