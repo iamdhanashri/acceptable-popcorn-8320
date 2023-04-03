@@ -16,12 +16,12 @@ orderrouter.post("/create", (req, res) => {
 
     let token = req.headers.token;
 
-    jwt.verify(token, 'shhhhh', async function (err, decoded) {
+    jwt.verify(token, 'masai', async function (err, decoded) {
         if (decoded) {
-            req.body.userid = decoded.userid;
+            req.body.userid = decoded.userID;
             let order = new OrderModel(req.body);
             await order.save();
-            res.send({ "msg": "Order Successfull" })
+            res.send({ "msg": "Processing" })
         }
         else {
             res.send({ "msg": "Login Again" })

@@ -8,7 +8,7 @@ const authMiddleware = async (req, res, next) => {
     const token = req.headers.authorization.split(" ")[1];
 
     // verify our token with decoded token by userID
-    const decodedtoken = await jwt.verify(token, "refreshtokensecret");
+    const decodedtoken = await jwt.verify(token, "masai");
     const { userID } = decodedtoken;
 
     // check if user is exists
@@ -24,14 +24,15 @@ const authMiddleware = async (req, res, next) => {
 
     const isTokenBlacklisted = await redisClient.get(decodedtoken.userID);
 
-    if (isTokenBlacklisted)
+    if (isTokenBlacklisted) {
       return res.status(403).send({ msg: "token logout , Please login again" });
+    }
 
     req.body.userID = decodedtoken.userID;
     req.user = user;
     next();
   } catch (err) {
-    return res.status(401).json({ msg: "unauthorized" });
+    return res.status(401).json({ msg: err.message });
   }
 
 };

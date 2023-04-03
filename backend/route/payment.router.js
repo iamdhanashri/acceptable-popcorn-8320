@@ -88,8 +88,8 @@ paymentrouter.get("/success",(req,res)=>
     //         // Redirect the user to payment complete page.
     //         return res.redirect('' );
     //     }
-    return res.redirect('https://course.masaischool.com/dashboard' );
-    // res.send("payment sucessfull please check your mail for invoice and pdf")
+    // return res.redirect('https://course.masaischool.com/dashboard' );
+    res.send("payment sucessfull please check your mail for invoice and pdf")
 })
 
 

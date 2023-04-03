@@ -3,7 +3,8 @@ const mongoose=require("mongoose");
 const orderSchema=({
     name:String,
     userid:String,
-    card:String,
+    amount:String,
+    email:String,
     order:Array
 })
 

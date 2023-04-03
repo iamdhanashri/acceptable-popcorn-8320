@@ -19,10 +19,11 @@
         }.btn-c{
           float: right;
         }.textpart{
+          margin: auto;
           width: 700px;
         }.comment-container{
           margin-top: 30px;
-    
+          margin: auto;
           width: 700px;
        
         }.comment-container h3{

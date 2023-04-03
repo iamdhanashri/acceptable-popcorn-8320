@@ -20,7 +20,7 @@ productrouter.get("/", async (req, res) => {
 productrouter.get("/boy", async (req, res) => {
     // let {token}=req.headers;
     try {
-        let note = await ProductModel.find({productfor:{$regex:"boy",$options:"i"}})
+        let note = await ProductModel.find({ productfor: { $regex: "boy", $options: "i" } })
         res.send(note)
     } catch (error) {
         res.send({ "msg": error })
@@ -32,7 +32,7 @@ productrouter.get("/boy", async (req, res) => {
 productrouter.get("/girl", async (req, res) => {
     // let {token}=req.headers;
     try {
-        let note = await ProductModel.find({productfor:{$regex:"girl",$options:"i"}})
+        let note = await ProductModel.find({ productfor: { $regex: "girl", $options: "i" } })
         res.send(note)
     } catch (error) {
         res.send({ "msg": error })
@@ -62,31 +62,21 @@ productrouter.get("/top", async (req, res) => {
 })
 
 productrouter.post("/create", async (req, res) => {
-    let { token } = req.headers;
-    if (token) {
-        jwt.verify(token, 'shhhhh', async function (err, decoded) {
-            if (decoded) {
-                // req.body.user=decoded.userid;
-                ProductModel.insertMany(req.body);
-                res.send({ "msg": "Product Created" })
-            }
-            else {
-                res.send({ "msg": err })
-            }
-        });
-    }
-    else {
-        res.send({ "msg": "Please Login" })
-    }
 
+    try {
+        ProductModel.insertMany(req.body);
+        res.send({ "msg": "Product Created" })
+    } catch (err) {
+        res.send({ "msg": err })
+    }
 })
 
 
-productrouter.patch("/update", authMiddleware, async (req, res) => {
+productrouter.patch("/update", async (req, res) => {
 
 })
 
-productrouter.delete("/delete/:_id", authMiddleware, async (req, res) => {
+productrouter.delete("/delete/:_id", async (req, res) => {
 
     await ProductModel.findByIdAndDelete(req.params);
     res.send({ "msg": "Product Deleted" })
