@@ -53,10 +53,10 @@ async function payment(event) {
         // window.location.href=url.redirectUrl
         alert(url.message)
         window.open(url.redirectUrl)
-        // setTimeout(() => {
-        //     window.location.href = "./index.html";
+        setTimeout(() => {
+            window.location.href = "./index.html";
 
-        //   }, 500);
+          }, 500);
     }
 
     name.value = ""
