@@ -10,20 +10,17 @@ Cyclic Link<a href="https://itchy-plum-sheep.cyclic.app/">  Click here</a> <br>
 
 <h3>Landing page.html</h3>
 
-![landing page](https://user-images.githubusercontent.com/94932577/213989745-14478705-0d16-4458-ab3b-d59e89e8bf4b.png)
+![landing page](https://github.com/ilahiamaan606/acceptable-popcorn-8320/blob/main/frontend/images/landing%20page.png?raw=true)
 
 
 <h3>Login page.html</h3>
 
 ![Login page](https://github.com/ilahiamaan606/acceptable-popcorn-8320/blob/main/frontend/images/Login.png?raw=true)
 
-<h3>view all.html</h3>
-<img src="https://user-images.githubusercontent.com/94932577/213989968-c8402313-c469-47f9-96e9-d4435ffa1091.png">
-
 <h3>Product page </h3>
 <!-- ![Product page](https://user-images.githubusercontent.com/94932577/213990037-2c06565e-8e1c-4c79-9592-9cc1cdbe1f34.png) -->
-<img src="https://user-images.githubusercontent.com/94932577/213990037-2c06565e-8e1c-4c79-9592-9cc1cdbe1f34.png">
+<img src="https://github.com/ilahiamaan606/acceptable-popcorn-8320/blob/main/frontend/images/product.png?raw=true">
 
 <h3>Cart Page.html</h3>
 <!-- ![cart page](https://user-images.githubusercontent.com/94932577/213990107-c521742c-a1f6-4d6b-896f-d7dfb1c19e49.png) -->
-<img src="https://user-images.githubusercontent.com/94932577/213990107-c521742c-a1f6-4d6b-896f-d7dfb1c19e49.png">
+<img src="https://github.com/ilahiamaan606/acceptable-popcorn-8320/blob/main/frontend/images/cart.png?raw=true">
