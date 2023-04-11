@@ -8,6 +8,23 @@ Netlify Link<a href="https://stirring-lokum-bf0ef8.netlify.app/">  Click here</a
 
 Cyclic Link<a href="https://itchy-plum-sheep.cyclic.app/">  Click here</a> <br>
 
+
+We build mostly 7 pages :-
+HomePage (Landing page)
+
+Signup Page
+
+Login Page
+
+Product Page
+
+Admin Page
+
+Cart Page
+
+Payment Page
+
+
 <h3>Landing page.html</h3>
 
 ![landing page](https://github.com/ilahiamaan606/acceptable-popcorn-8320/blob/main/frontend/images/landing%20page.png?raw=true)
